@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-...your-integrity-hash..." crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NavigationBar -->
+    <nav class="navbar navbar-expand-lg " style="background-color: transparent;">
+        <div class="container-fluid ml-1">
+            <a class="navbar-brand ms-4" href="#"><img src="/Assests/logo2.png" alt="Bootstrap" width="56"
+                    height="55"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Courses/CourseIndex.html">Courses</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            Career Path
+                        </a>
+                        <ul class="dropdown-menu bg-black text-white">
+                            <li><a class="dropdown-item bg-black text-info"
+                                    href="https://www.hackthebox.com/blog/become-an-ethical-hacker-a-career-guide-for-ethical-hacking">Ethical
+                                    Hacking</a></li>
+                            <li><a class="dropdown-item bg-black text-info "
+                                    href="https://www.manageengine.com/log-management/cyber-security/soc-analyst-career-path.html">SOC
+                                    Analyst</a></li>
+                            <li><a class="dropdown-item bg-black text-info"
+                                    href="https://www.coursera.org/in/articles/what-is-a-network-administrator-a-career-guide">Network
+                                    Administrator</a></li>
+                            <li><a class="dropdown-item bg-black text-info"
+                                    href="https://tryhackme.com/careers/penetration-tester">Penestration Testing</a>
+                            </li>
+                            <li><a class="dropdown-item bg-black text-info"
+                                    href="https://academy.hackthebox.com/path/preview/bug-bounty-hunter">Bug Bounty
+                                    Hunter</a></li>
+                            <li><a class="dropdown-item bg-black text-info"
+                                    href="https://www.sprintzeal.com/blog/network-analyst">Junior Network Analyst</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Blog/blogMain.html" class="nav-link " aria-disabled="true">Blog/News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Resources_/resource.html" class="nav-link " aria-disabled="true">Resources</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="/Assests/herovideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+
+        <!-- Hero Content (Heading + Buttons) -->
+        <div class="hero-content">
+            <p class="topText">Kickstart</p>
+            <p class="middleText">your career <span class="topText">in</span></p>
+            <p class="topText">threat intelligence</p>
+            <a href="./Courses/CourseIndex.html" class="btn">Get Started</a>
+            <a href="./Blog/blogMain.html" class="btn btn-secondary">Read More..</a>
+
+        </div>
+    </div>
+    <div class="marqueeLogo">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/Accenture.png" alt="" hspace="50">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-air.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-del.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-ey.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-his.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-kp.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-ray.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-st.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-del.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/w-his.webp" alt="">
+            <img class=" marqueeItem" src="Assests/CompanyLogo/Accenture.png" alt="">
+        </marquee>
+    </div>
+    <div class="my-5" style="margin-left: 40px; margin-bottom:0px;">
+        <!-- 1 -->
+        <div class="row align-items-center" style="display: flex; justify-content: space-between;margin-right: 10px;">
+            <div class="col-md-6 section-container text-white bg-transparent">
+                <h2>CREATE YOUR ACCOUNT</h2>
+                <p class="mt-3">Join the CyberArcX platform and benefit from our free and paid training courses.</p>
+                <hr class="text-secondary">
+                <ul class="check-list mt-4">
+                    <li><span>Register your account for free</span></li>
+                    <li><span>No credit card details required</span></li>
+                    <li><span>Quick and easy setup</span></li>
+                </ul>
+                <p class="mt-4">You're only a few minutes away from accessing exceptional online cyber security
+                    training.</p>
+            </div>
+            <div class="col-6" style="text-align: center;"><img src="Assests/laptop.png" alt="Laptop" width="408px"
+                    height="340px"></div>
+        </div>
+        <!-- 2 -->
+        <div class="row align-items-center" style="display: flex; margin-right: 50px;justify-content: space-between;">
+            <div class="col-6" style="text-align: center;"><img src="Assests/badge.png" alt="Laptop" width="408px"
+                    height="340px"></div>
+            <div class="col-md-6 section-container text-white bg-transparent">
+                <h2>Choose your course</h2>
+                <p class="mt-3">Pick the online training course that best suits your needs and begin learning.</p>
+                <hr class="text-secondary">
+                <ul class="check-list mt-4">
+                    <li><span>Globally accredited training courses</span></li>
+                    <li><span>Created by industry experts</span></li>
+                    <li><span>Delivered through our bespoke learning platform</span></li>
+                </ul>
+                <p class="mt-4">Our training courses range from brief introductions (101 courses) to advanced concept
+                    applications.</p>
+            </div>
+
+        </div>
+        <!-- 3 -->
+        <div class="row align-items-center" style="display: flex; justify-content: space-between;margin-right: 0;">
+            <div class="col-md-6 section-container text-white bg-transparent">
+                <h2>Share your success</h2>
+                <p class="mt-3">Successfully complete your training course final exam to receive your arcX
+                    certification.</p>
+                <hr class="text-secondary">
+                <ul class="check-list mt-4">
+                    <li><span>Earn industry-recognised certification</span></li>
+                    <li><span>Share your professional accomplishments</span></li>
+                    <li><span>Validate your certification on our website</span></li>
+                </ul>
+                <p class="mt-4">Sharing your dedication to continuous professional development is never a bad thing.</p>
+            </div>
+            <div class="col-6 " style="text-align: center; "><img src="Assests/certificate.png" alt="Laptop"
+                    width="408px" height="280px" class="border rounded"></div>
+        </div>
+    </div>
+    <!-- section -->
+    <div class="jumbotronContainer container border rounded">
+        <section class="jumbotron text-center">
+            <div class="container my-5">
+                <h1 class="jumbotron-heading " style="text-transform: uppercase;"><b>Start Learning <br>
+                        For <span style="color:#2078DD;">Free</span></h1>
+                <p class="lead">Quick and easy setup. No credit card required.</p>
+                <p>
+                    <a href="./Resources_/resource.html" class="btn my-2 startButton">Main call to action</a>
+                </p></b>
+            </div>
+        </section>
+    </div>
+    <!-- terminal -->
+    <script src="script.js"></script>
+    <div class="terminalSection">
+        <button id="popBtn"> <img src="Assests/pngegg.png" type="png" alt="Linux Terminal"></button>
+    </div>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup" id="popup">
+            <span class="close" id="closePopup">X</span>
+            <div class="popup-content">
+                <iframe src="https://www.terminaltemple.com/" width="100%" height="600" style="border: none;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer my-5 pt-5 ">
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="my-5">
+
+            <footer class="text-center text-lg-start text-white">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row my-4">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                            <div class="border border-white rounded-circle bg-transparent shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                                style="width: 150px; height: 150px;">
+                                <img src="Assests/logo2.png" class="" height="70" alt="" loading="lazy" />
+                            </div>
+
+                            <p class="text-center">Cybersecurity isn’t just a skill <br>
+                                <span style="color: #2FB999;">it’s a responsibility.</span>
+                            </p>
+
+                            <ul class="list-unstyled d-flex flex-row justify-content-center">
+                                <li>
+                                    <a class="text-white px-2" href="#!">
+                                        <i class="fab fa-facebook-square"> <img
+                                                src="Assests/Social Media Icon/icons8-facebook-48.png" alt=""></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white px-2" href="#!">
+                                        <i class="fab fa-instagram"> <img
+                                                src="Assests/Social Media Icon/icons8-instagram-48.png" alt=""></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white ps-2" href="#!">
+                                        <i class="fab fa-youtube"><img
+                                                src="Assests/Social Media Icon/icons8-youtube-48.png" alt=""></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white ps-2" href="#!">
+                                        <i class="fab fa-whatsap"><img
+                                                src="Assests/Social Media Icon/icons8-whatsapp-48.png" alt=""></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">COURSES</h5>
+
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="./Courses/CourseIndex.html" class="text-white"><i class="fas fa-paw pe-3"></i>Cybersecurity </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Networking</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Linux Foundation </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.kali.org/docs/general-use/kali-training/" class="text-white"><i
+                                            class="fas fa-paw pe-3"></i>Kali Linux Basics</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.redhat.com/en/blog/python-scripting-intro"
+                                        class="text-white"><i class="fas fa-paw pe-3"></i>Python Scipt</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/"
+                                        class="text-white"><i class="fas fa-paw pe-3"></i>Bash Script</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Career Path</h5>
+
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Ethical Hacking</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>SOC Analyst</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Network
+                                        Administrator</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Penetration
+                                        Testing</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Bug Bounty Hunter</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Junior Network
+                                        Analyst</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Contact</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt pe-2"></i>KKWIEER, Nashik</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2025 Copyright:
+                    <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+                    <a class="text-white" href="https://mdbootstrap.com/">Sonu And Soham</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+        </div>
+        <!-- End of .container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Bundle with Popper (recommended) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
+
+</body>
+
+</html>

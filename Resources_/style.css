@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    /* or sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+nav a,
+button {
+    color: white !important;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a:hover {
+    outline: 2px solid rgba(128, 128, 128, 0.507);
+    border-radius: 50px;
+}
+
+nav button {
+    background: transparent;
+}
+
+nav button:hover {
+    background: linear-gradient(90deg, #2FB999, #2078DD);
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0B0F17;
+    color: white;
+}
+
+#myPDF {
+    width: 85%;
+    /* height: 975px; */
+}
+
+.terminalSection {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.popBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.popBtn img {
+    width: 250px;
+    height: 320px;
+    border: none;
+}
+
+.popupOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+
+    font-family: Arial, sans-serif;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: transparent;
+
+    padding: 10px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.popup-content {
+    width: 70vw;
+    height: 78vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.popup .closePopup {
+    position: absolute;
+    background-color: #2078DD;
+    border-radius: 100%;
+    padding:9px;
+    top: 10px;
+    right: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
