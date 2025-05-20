@@ -49,6 +49,7 @@ Cybersecurity is booming, and there's a growing need for structured, beginner-fr
 - [https://www.geeksforgeeks.org/computer-network-tutorials/](https://www.geeksforgeeks.org/computer-network-tutorials/)
 - [https://www.w3schools.com/cybersecurity/cybersecurity_networking.php](https://www.w3schools.com/cybersecurity/cybersecurity_networking.php)
 - [https://www.stealthmole.com/resources/blog](https://www.stealthmole.com/resources/blog)
+- [https://www.newsdata.io/search-news](https://www.newsdata.io/search-news)
 
 ---
 
