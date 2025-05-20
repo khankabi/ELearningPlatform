@@ -8,8 +8,7 @@ This project is an **E-Learning Platform** focused on **Cybersecurity** and **Et
 ## 🛠️ Technologies Used
 
 - **Frontend**: HTML, CSS, Bootstrap  
-- **Backend**: JavaScript, jQuery  
-- **Database**: JSON File  
+- **Backend**: JavaScript, API  
 
 ---
 
@@ -32,7 +31,9 @@ Cybersecurity is booming, and there's a growing need for structured, beginner-fr
    - Detailed modules on each topic  
    - Quizzes at the end of each module  
 6. **Other Resources**  
-   - Reference books and websites for extended learning  
+   - Reference books and websites for extended learning
+7. **Virtual Terminal**
+   - virtual terminal template to practice linux commands
 
 ---
 
