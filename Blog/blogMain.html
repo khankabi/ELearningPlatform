@@ -295,46 +295,11 @@
 
     </main>
     <main>
-        <div class="container">
-            <h1>Latest Ethical Hacking News</h1>
-            <div id="news-container">Loading news...</div>
-
-            <script>
-                async function fetchEthicalHackingNews() {
-                    const container = document.getElementById('news-container');
-                    const url = 'https://newsdata.io/api/1/latest?apikey=pub_d91ecb7eeac3415393b26a0859a5cc3c&q=ethical%20hacking';
-
-                    try {
-                        const response = await fetch(url);
-                        const data = await response.json();
-
-                        if (data && data.results && data.results.length > 0) {
-                            container.innerHTML = '';
-
-                            data.results.forEach(article => {
-                                const card = document.createElement('div');
-                                card.className = 'news-card';
-
-                                card.innerHTML = `
-              <a href="${article.link}" class="news-title" target="_blank">${article.title}</a>
-              <div class="news-meta">${article.source_id || 'Unknown Source'} | ${new Date(article.pubDate).toLocaleString()}</div>
-              <div class="news-description">${article.description || 'No description available.'}</div>
-            `;
-
-                                container.appendChild(card);
-                            });
-                        } else {
-                            container.innerHTML = 'No news found.';
-                        }
-                    } catch (error) {
-                        container.innerHTML = 'Error loading news.';
-                        console.error(error);
-                    }
-                }
-
-                fetchEthicalHackingNews();
-            </script>
-
+    
+        <div class="container" id="search-box">
+            <input type="text" id="searchInput" placeholder="Enter topic (e.g. hacking, malware)">
+            <button onclick="searchNews()">Search</button>
+            <div id="news-container">Enter a keyword and click "Search" to begin.</div>
         </div>
     </main>
     <!-- //footer -->
@@ -486,6 +451,49 @@
         </div>
         <!-- End of .container -->
     </div>
+    <script>
+        async function searchNews() {
+            const keyword = document.getElementById('searchInput').value.trim();
+            const container = document.getElementById('news-container');
+            const apiKey = 'pub_d91ecb7eeac3415393b26a0859a5cc3c';
+
+            if (!keyword) {
+                container.innerHTML = 'Please enter a keyword.';
+                return;
+            }
+
+            container.innerHTML = 'Loading...';
+
+            const url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&q=${encodeURIComponent(keyword)}&language=en`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data && data.results && data.results.length > 0) {
+                    container.innerHTML = '';
+
+                    data.results.forEach(article => {
+                        const card = document.createElement('div');
+                        card.className = 'news-card';
+
+                        card.innerHTML = `
+              <a href="${article.link}" class="news-title" target="_blank">${article.title}</a>
+              <div class="news-meta">${article.source_id || 'Unknown Source'} | ${new Date(article.pubDate).toLocaleString()}</div>
+              <div class="news-description">${article.description || 'No description available.'}</div>
+            `;
+
+                        container.appendChild(card);
+                    });
+                } else {
+                    container.innerHTML = 'No results found.';
+                }
+            } catch (error) {
+                container.innerHTML = 'Error fetching news.';
+                console.error(error);
+            }
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
